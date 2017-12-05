@@ -1,0 +1,38 @@
+{
+	"name":"contao-monitoring/monitoring-scan-client-updater-contao-version",
+	"description":"Provides a component to update the system of a monitored entry with the scanned Contao version from the client",
+	"keywords":["contao","monitoring"],
+	"type":"contao-module",
+	"homepage":"https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version",
+	"license":"LGPL-3.0+",
+	"authors":[
+		{
+			"name":"Cliff Parnitzky",
+			"email":"contao@cliff-parnitzky.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"contao@cliff-parnitzky.de",
+		"issues":"https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version/issues",
+		"source":"https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version"
+	},
+	"require":{
+		"php":">=5.6",
+		"contao/core-bundle":"~3.5 || ~4.4",
+		"contao-community-alliance/composer-plugin":"~2.4 || ~3.0",
+		"contao-monitoring/monitoring":"~1.9",
+		"contao-monitoring/monitoring-scan-client":"~1.0",
+		"contao-monitoring/monitoring-scan-client-updater":"~1.0"
+	},
+	"extra":{
+		"contao":{
+			"sources":{
+				"system/modules/MonitoringScanClientUpdaterContaoVersion":"system/modules/MonitoringScanClientUpdaterContaoVersion"
+			}
+		},
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	}
+}
