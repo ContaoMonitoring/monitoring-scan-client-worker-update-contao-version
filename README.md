@@ -5,7 +5,7 @@
 Contao Extension: MonitoringScanClientUpdaterContaoVersion
 ==========================================================
 
-Provides a component to update the system of a monitored entry with the scanned Contao version from the client
+Provides a component to update the system of a monitored entry with the scanned Contao version from the client.
 
 
 Installation

@@ -1,6 +1,6 @@
 {
 	"name":"contao-monitoring/monitoring-scan-client-updater-contao-version",
-	"description":"Provides a component to update the system of a monitored entry with the scanned Contao version from the client",
+	"description":"Provides a component to update the system of a monitored entry with the scanned Contao version from the client.",
 	"keywords":["contao","monitoring"],
 	"type":"contao-module",
 	"homepage":"https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version",
