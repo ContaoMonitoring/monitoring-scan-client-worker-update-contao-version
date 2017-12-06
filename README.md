@@ -1,9 +1,9 @@
-[![Latest Version on Packagist](http://img.shields.io/packagist/v/contao-monitoring/monitoring-scan-client-updater-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-updater-contao-version)
-[![Installations via composer per month](http://img.shields.io/packagist/dm/contao-monitoring/monitoring-scan-client-updater-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-updater-contao-version)
-[![Installations via composer total](http://img.shields.io/packagist/dt/contao-monitoring/monitoring-scan-client-updater-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-updater-contao-version)
+[![Latest Version on Packagist](http://img.shields.io/packagist/v/contao-monitoring/monitoring-scan-client-worker-update-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-worker-update-contao-version)
+[![Installations via composer per month](http://img.shields.io/packagist/dm/contao-monitoring/monitoring-scan-client-worker-update-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-worker-update-contao-version)
+[![Installations via composer total](http://img.shields.io/packagist/dt/contao-monitoring/monitoring-scan-client-worker-update-contao-version.svg?style=flat)](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-worker-update-contao-version)
 
-Contao Extension: MonitoringScanClientUpdaterContaoVersion
-==========================================================
+Contao Extension: MonitoringScanClientWorkerUpdateContaoVersion
+===============================================================
 
 Provides a component to update the system of a monitored entry with the scanned Contao version from the client.
 
@@ -11,9 +11,9 @@ Provides a component to update the system of a monitored entry with the scanned 
 Installation
 ------------
 
-Install the extension via composer: [contao-monitoring/monitoring-scan-client-updater-contao-version](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-updater-contao-version).
+Install the extension via composer: [contao-monitoring/monitoring-scan-client-worker-update-contao-version](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-worker-update-contao-version).
 
-If you prefer to install it manually, download the latest release here: https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version/releases
+If you prefer to install it manually, download the latest release here: https://github.com/ContaoMonitoring/monitoring-scan-client-worker-update-contao-version/releases
 
 After installation go to the system settings for defining version format.
 
@@ -21,7 +21,7 @@ After installation go to the system settings for defining version format.
 Tracker
 -------
 
-https://github.com/ContaoMonitoring/monitoring-scan-client-updater-contao-version/issues
+https://github.com/ContaoMonitoring/monitoring-scan-client-worker-update-contao-version/issues
 
 
 Compatibility
@@ -38,4 +38,4 @@ This extension is dependent on the following extensions:
 
 - [[contao-monitoring/monitoring]](https://packagist.org/packages/contao-monitoring/monitoring)
 - [[contao-monitoring/monitoring-scan-client]](https://packagist.org/packages/contao-monitoring/monitoring-scan-client)
-- [[contao-monitoring/monitoring-scan-client-updater]](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-updater)
+- [[contao-monitoring/monitoring-scan-client-worker]](https://packagist.org/packages/contao-monitoring/monitoring-scan-client-worker)
