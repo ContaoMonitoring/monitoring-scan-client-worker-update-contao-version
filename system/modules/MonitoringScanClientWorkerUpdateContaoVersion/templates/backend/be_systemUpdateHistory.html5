@@ -1,4 +1,4 @@
-
+<div class="tl_message"><div class="tl_info"><?php echo $GLOBALS["TL_LANG"]["tl_monitoring"]["systemUpdateHistory_dialogInfo"]; ?></div></div>
 <div class="tl_listing_container list_view">
   <table class="tl_listing showColumns" style="width: 100%">
     <tbody><tr>

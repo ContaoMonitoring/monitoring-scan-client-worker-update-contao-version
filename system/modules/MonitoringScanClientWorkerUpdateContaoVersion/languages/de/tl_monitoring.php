@@ -33,6 +33,7 @@
 $GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_buttonActive']            = 'Historie der System-Aktualisierung anzeigen';
 $GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_buttonInactive']          = 'Es steht keine Historie der System-Aktualisierung zur Verfügung';
 $GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_dialogTitle']             = 'Historie der System-Aktualisierung';
+$GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_dialogInfo']              = 'Das "Aktualisiert am" Datum ist der Zeitpunkt, an dem der neues Werte für <i>System</i> vom MonitoringClient übrtragen wurden, nicht der echte Aktualisierungszeitpunkt des überwachten System.';
 $GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_dialogTableHeaderDate']   = 'Aktualisiert am';
 $GLOBALS['TL_LANG']['tl_monitoring']['systemUpdateHistory_dialogTableHeaderSystem'] = 'Neues System';
 
