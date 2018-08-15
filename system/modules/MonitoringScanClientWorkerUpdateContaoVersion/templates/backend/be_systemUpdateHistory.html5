@@ -1,0 +1,16 @@
+<div class="tl_message"><div class="tl_info"><?php echo $GLOBALS["TL_LANG"]["tl_monitoring"]["systemUpdateHistory_dialogInfo"]; ?></div></div>
+<div class="tl_listing_container list_view">
+  <table class="tl_listing showColumns" style="width: 100%">
+    <tbody><tr>
+      <th class="tl_folder_tlist"><?php echo $GLOBALS["TL_LANG"]["tl_monitoring"]["systemUpdateHistory_dialogTableHeaderDate"]; ?></th>
+      <th class="tl_folder_tlist"><?php echo $GLOBALS["TL_LANG"]["tl_monitoring"]["systemUpdateHistory_dialogTableHeaderSystem"]; ?></th>
+    </tr>
+    <?php $n = 0; ?>
+    <?php $systemUpdateHistory = array_reverse($this->systemUpdateHistory); ?>
+    <?php foreach($systemUpdateHistory as $entry): ?>
+    <tr class="<?php echo $n++ % 2 == 0 ? 'even' : 'odd'; ?>" onmouseover="Theme.hoverRow(this,1)" onmouseout="Theme.hoverRow(this,0)">
+      <td class="tl_file_list"><?php echo Date::parse(Config::get("datimFormat"), $entry["date"]); ?></td><td class="tl_file_list"><?php echo $entry["system"]; ?></td>
+    </tr>
+    <?php endforeach; ?>
+  </tbody></table>
+</div>
