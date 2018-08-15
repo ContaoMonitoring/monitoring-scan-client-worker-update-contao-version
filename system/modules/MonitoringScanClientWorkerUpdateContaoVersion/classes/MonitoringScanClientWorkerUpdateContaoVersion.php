@@ -2,7 +2,7 @@
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2017 Leo Feyer
+ * Copyright (C) 2005-2018 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,7 +21,7 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2017-2017
+ * @copyright  Cliff Parnitzky 2017-2018
  * @author     Cliff Parnitzky
  * @package    MonitoringScanClientWorkerUpdateContaoVersion
  * @license    LGPL
@@ -36,7 +36,7 @@ namespace Monitoring;
  * Class MonitoringScanClientWorkerUpdateContaoVersion
  *
  * Contains functions to update the system field.
- * @copyright  Cliff Parnitzky 2016-2016
+ * @copyright  Cliff Parnitzky 2016-2018
  * @author     Cliff Parnitzky
  * @package    Controller
  */
@@ -70,7 +70,12 @@ class MonitoringScanClientWorkerUpdateContaoVersion extends \Backend
         }
         $objVersions->initialize();
         
+        $arrSystemUpdateHistory = deserialize($objMonitoringEntry->systemUpdateHistory, true);
+        $arrSystemUpdateHistory[] = array('date' => time(), 'system' => $strSystemEntry);
+        
         $objMonitoringEntry->system = $strSystemEntry;
+        $objMonitoringEntry->systemUpdateHistory = $arrSystemUpdateHistory;
+        
         $objMonitoringEntry->save();
         
         $objVersions->create(); 
