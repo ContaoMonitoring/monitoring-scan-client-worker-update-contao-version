@@ -38,6 +38,7 @@ $GLOBALS['TL_DCA']['tl_monitoring']['fields']['system']['wizard'][] = array('tl_
  */
 $GLOBALS['TL_DCA']['tl_monitoring']['fields']['systemUpdateHistory'] = array
 (
+    'eval'                    => array('doNotShow'=>true),
     'sql'                     => "blob NULL"
 );
 
