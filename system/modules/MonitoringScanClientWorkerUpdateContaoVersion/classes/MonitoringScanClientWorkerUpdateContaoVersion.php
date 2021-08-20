@@ -55,7 +55,7 @@ class MonitoringScanClientWorkerUpdateContaoVersion extends \Backend
    */
   public function updateContaoVersion($objMonitoringEntry, $response)
   {
-    if (in_array("MonitoringClientSensorContao", explode(", ", $response['monitoring.client.sensors'])) && !empty($response['contao.version']))
+    if (!empty($response['contao.version']))
     {
       $strSystemEntry = sprintf(\Config::get('monitoringScanClientWorkerUpdateContaoVersionFormat'), $response['contao.version']);
       if ($objMonitoringEntry->system != $strSystemEntry)
@@ -69,17 +69,17 @@ class MonitoringScanClientWorkerUpdateContaoVersion extends \Backend
           $objVersions->setUsername("ContaoMonitoringSystem");
         }
         $objVersions->initialize();
-        
+
         $arrSystemUpdateHistory = deserialize($objMonitoringEntry->systemUpdateHistory, true);
         $arrSystemUpdateHistory[] = array('date' => time(), 'system' => $strSystemEntry);
-        
+
         $objMonitoringEntry->system = $strSystemEntry;
         $objMonitoringEntry->systemUpdateHistory = $arrSystemUpdateHistory;
-        
+
         $objMonitoringEntry->save();
-        
-        $objVersions->create(); 
-      
+
+        $objVersions->create();
+
         $this->logDebugMsg("Updated the system field of monitoriong entry ID " . $objMonitoringEntry->id . " to '" . $strSystemEntry . "'.", __METHOD__);
       }
     }
@@ -88,7 +88,7 @@ class MonitoringScanClientWorkerUpdateContaoVersion extends \Backend
       $this->logDebugMsg("No Contao version for updating the system field of monitoriong entry ID " . $objMonitoringEntry->id . " transferred.", __METHOD__);
     }
   }
-  
+
   /**
    * Logs the given message if the debug mode is anabled.
    */
